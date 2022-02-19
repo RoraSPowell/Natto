@@ -70,11 +70,8 @@ p {
   color: #3e0101;
 }
 
-.englishText {
+.text {
   margin: 50px 100px;
-}
-.japaneseText {
-  margin: 5px 100px 50px 100px;
 }
 
 .ricePaper {
@@ -116,4 +113,11 @@ li {
   font-weight: 400;
   font-style: italic;
   font-size: 200;
+}
+
+@media (max-width: 720px) {
+  .text {
+    display: flex;
+    justify-content: center;
+  }
 }
