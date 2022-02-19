@@ -11,22 +11,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/src/styles.css" />
-    <link rel="stylesheet" href="/src/script.js" />
-
-    <title>Nattō 😋</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>納豆 😋</title>
   </head>
   <body>
     <nav class="navbar navbar-light">
       <a class="navbar-brand" href="#">😋</a>
+
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="japaneseindex.html">日本語 </a>
+          <a class="nav-link" href="/index.html">English </a>
         </li>
       </ul>
     </nav>
 
-    <h1>Nattō</h1>
-    <h2>A Unique & Healthy Food from Japan</h2>
+    <h1>納豆</h1>
+    <h2>日本のユニークで健康に良い食べ物</h2>
 
     <img
       class="gooeyNatto"
@@ -38,22 +42,20 @@
     <br />
 
     <div style="text-align: center">
-      <button class="buyButton">Try Natto Now!</button>
+      <span class="centerButton">
+        <button class="buyButton">今すぐ買う！</button>
+      </span>
     </div>
 
     <p class="englishText">
-      Nattō is fermented soybeans. Traditionally it was fermented by being
-      wrapped in rice straw. It has a unique texture. The more you stir it, the
-      gooier it becomes. Nattō is rich in protein, vitamins, and minerals
-      including, but not limited to iron, potassium, calcium, vitamin B2,
-      vitamin K, folic acid, magnesium, and more. As it's high in probiotics the
-      nutrients are easily absorbed in the gut. Its fermentation produces nattō
-      kinase. This is an enzyme that helps dissolve blood clots and is found
-      more in the gooey and stringy portion of nattō.
+      納豆の伝統的な作り方は藁に包んで発酵しますが、今は発砲スチロールが使われます。
+      納豆には独特な食感があります。混ぜるほどねばねばになります。
+      納豆に含まれる栄養素はタンパク質、鉄、カリウム、カルシウム、ビタミンB2、ビタミンK、葉酸、マグネシウム、などのビタミンやミネラルが豊富です。
+      大豆を発酵させて納豆をつくるために使われる納豆菌はプロバイオティクス豊かで腸内環境を整えたり、消化・吸収を助けます。納豆キナーゼという酵素は納豆のねばねばしているところにあり、動脈硬化予防に効果があるといわれています。
     </p>
     <p class="reference" style="text-align: center">
       <a href="https://en.wikipedia.org/wiki/Natt%C5%8D" target="_blank">
-        Learn More About Nattō Here!
+        納豆について更に知りたい方はこちら！
       </a>
     </p>
     <br />
@@ -74,15 +76,15 @@
       />
     </div>
 
-    <h3>Other well-known health benefits:</h3>
+    <h3>他に知られている健康メリット：</h3>
     <ul>
-      <li>Promotes Heart Health</li>
-      <li>Improves Digestion</li>
-      <li>Contributes to Bone Strength</li>
-      <li>Contributes to Healthy Immune System</li>
-      <li>May Reduce Risk of Certain Cancers</li>
-      <li>May Improve Brain Health</li>
-      <li>May Contribute to Weight Loss</li>
+      <li>心臓の働きがアップ</li>
+      <li>消化を改善する</li>
+      <li>骨祖しょう症の予防</li>
+      <li>免疫力を高める</li>
+      <li>ガンのリスクが下がる可能性</li>
+      <li>脳の健康に貢献する</li>
+      <li>脂肪蓄積を抑える</li>
     </ul>
     <p class="emoji">😋</p>
 
@@ -92,8 +94,12 @@
     <p class="author">This page was built by Laura Powell</p>
     <script>
       function order() {
-        let orderNo = prompt("How many packs of Nattō do you want?");
-        alert("Thank you for purchasing " + orderNo + " packs of Nattō! 😋");
+        let orderNo = prompt("ご注文は納豆何パックになさいますか？");
+        alert(
+          "納豆" +
+            orderNo +
+            "パックをご注文いただき、誠にありがとうございます。😋"
+        );
       }
       let buy = document.querySelector(".buyButton");
       buy.addEventListener("click", order);
